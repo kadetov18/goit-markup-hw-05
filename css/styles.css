@@ -168,6 +168,9 @@ header {
 }
 /* index.html HERO SECTION */
 .hero-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   box-sizing: border-box;
   background: #2e2f42;
   background-image: linear-gradient(
@@ -460,18 +463,19 @@ header {
   justify-content: center;
   align-items: center;
   transition: border-radius 250ms linear;
+}
+
+.customers-use-svg {
   transition: fill 250ms linear;
 }
 
 .customers-link:hover use,
 .customers-link:focus use {
   fill: blue;
-  transition: fill 250ms ease;
 }
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid #3441c7;
-  transition: border-color 250ms ease;
 }
 
 .customers-use-svg {
@@ -625,16 +629,14 @@ header {
   letter-spacing: 0.04em;
   color: var(--color-logo);
   padding: 12px 24px;
+  transition: background-color 250ms ease, box-shadow 250ms ease-in-out;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  transition: transform 100ms linear;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 250ms ease-in-out;
   border-radius: 4px;
-  transition: background-color 250ms ease;
 }
 
 .portfolio-list {
